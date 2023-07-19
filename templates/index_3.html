@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{{
+		url_for('static',filename='styles/styles.css') }}" />
+		<link
+			rel="shortcut icon"
+			href="https://miro.medium.com/max/1000/1*eJWbxmatlWJCNuhJqXB_dw.png"
+			type="image/x-icon"
+		/>
+		<title>Linear Equation Solver</title>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><h4><a href="/"></a>Two Variable</h4></a></li>
+				<li class="active"><h4>Three Variable</h4></li>
+			</ul>
+			<div class="title"><h1>Three Variable Linear Equation</h1></div>
+		</nav>
+		<main>
+			<div class="canvas-container">
+				<div class="controls">
+					<h2 class="eqn-name">EQUATION 1</h2>
+					<button class="btn" id="clear1">Clear</button>
+				</div>
+				<div class="canvas-area">
+					<canvas id="canvas1" class="canvas"></canvas>
+				</div>
+				<div class="controls">
+					<button class="btn" id="clear2">Clear</button>
+					<h2 class="eqn-name">EQUATION 2</h2>
+				</div>
+				<div class="canvas-area">
+					<canvas id="canvas2" class="canvas"></canvas>
+				</div>
+				<div class="controls">
+					<button class="btn" id="clear3">Clear</button>
+					<h2 class="eqn-name">EQUATION 3</h2>
+				</div>
+				<div class="canvas-area">
+					<canvas id="canvas3" class="canvas"></canvas>
+				</div>
+				<button class="btn btn-calc" id="calc">Calculate</button>
+			</div>
+			<div class="soln-box" id="soln-box">
+				<div class="eqn">
+					<p>Equation 1 :<span id="eq1"></span></p>
+					<p>Equation 2 :<span id="eq2"></span></p>
+					<p>Equation 3 :<span id="eq3"></span></p>
+				</div>
+				<div class="soln">
+					<p>X : <span id="solnX"></span></p>
+					<p>Y : <span id="solnY"></span></p>
+					<p>Z : <span id="solnZ"></span></p>
+				</div>
+				<span id="error"></span>
+			</div>
+		</main>
+		<script src="{{ url_for('static', filename='js/script_3.js') }}"></script>
+	</body>
+</html>

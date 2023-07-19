@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #d9c0b9;
+	color: #fff;
+}
+
+nav{
+	background-color: #785757;
+	height: 80px;
+	padding: 20px;
+}
+
+nav ul{
+	float: right;
+}
+
+nav li{
+	list-style: none;
+	float: left;
+	padding: 10px;
+	margin-left: 15px;
+	font-size: 18px;
+	/* #654141 */
+}
+
+nav li.active , nav li:hover{
+	background-color: #341717;
+}
+
+.title{
+	float: left;
+	font-size: 20px;
+}
+
+h2 {
+	color:  #341717;
+	display: inline-block;
+	text-align: center;
+}
+
+h4 , h2  {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+main{
+	padding: 0 60px;
+}
+
+.canvas-container {
+	display: flex;
+	flex-direction: column;
+	/* padding: 0 60px */
+}
+
+.canvas-area{
+	margin: 20px 10px;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.eqn-name , .controls{
+	width: 10%;
+	position: relative;
+	top:50%;
+    left:0;
+    transform: translate(0, 40%);
+}
+.canvas {
+	width: 80%;
+	height: 30vh;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.btn{
+	background-color: #341717;
+	border-radius: 10px;
+	width: 100px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn:hover {
+	background-color: #200909;
+}
+
+
+.btn:active {
+	position: relative;
+}
+
+.btn-calc {
+	position: relative;
+	left:50%;
+}
+
+.btn-danger {
+	background-color: #dc2626;
+	width: 100px;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn-danger:hover {
+	background-color: #7f1d1d;
+}
+
+.btn-danger:active {
+	position: relative;
+}
+
+.btn-success {
+	background-color: #16a34a;
+	width: 100px;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	margin: 15px;
+}
+
+.btn-success:hover {
+	background-color: #14532d;
+}
+
+.btn-success:active {
+	position: relative;
+}
+
+.soln-box {
+	font-size: 1.5rem;
+	color: #341717;
+}
+
+.soln-box span {
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #16a34a;
+	margin-left: 15px;
+}
+
+.eqn{
+	border: 2px black solid;
+	border-width: 2px 0 2px 0;
+	padding: 10px 0 ;
+}
+
+.soln{
+	border: 2px black solid;
+	border-width: 0 0 2px 0;
+	padding: 10px 0 ;
+}
+
+.eqn p , .soln p{
+	padding: 15px 0;
+}
+.soln-box #error {
+	color: #dc2626;
+	font-weight: bold;
+}
